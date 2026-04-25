@@ -1,0 +1,61 @@
+Transform failed:
+Traceback (most recent call last):
+  File "D:\New folder\smart-healthcare-system\backend\predict_risk.py", line 111, in predict
+    X = preprocessor.transform(df)
+  File "C:\Users\ASUS\anaconda3\Lib\site-packages\sklearn\utils\_set_output.py", line 316, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "C:\Users\ASUS\anaconda3\Lib\site-packages\sklearn\compose\_column_transformer.py", line 1099, in transform
+    Xs = self._call_func_on_transformers(
+        X,
+    ...<3 lines>...
+        routed_params=routed_params,
+    )
+  File "C:\Users\ASUS\anaconda3\Lib\site-packages\sklearn\compose\_column_transformer.py", line 901, in _call_func_on_transformers
+    return Parallel(n_jobs=self.n_jobs)(jobs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\ASUS\anaconda3\Lib\site-packages\sklearn\utils\parallel.py", line 91, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\anaconda3\Lib\site-packages\joblib\parallel.py", line 1918, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File "C:\Users\ASUS\anaconda3\Lib\site-packages\joblib\parallel.py", line 1847, in _get_sequential_output
+    res = func(*args, **kwargs)
+  File "C:\Users\ASUS\anaconda3\Lib\site-packages\sklearn\utils\parallel.py", line 184, in __call__
+    return self.function(*args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\anaconda3\Lib\site-packages\sklearn\pipeline.py", line 1464, in _transform_one
+    res = transformer.transform(X, **params.transform)
+  File "C:\Users\ASUS\anaconda3\Lib\site-packages\sklearn\utils\_set_output.py", line 316, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "C:\Users\ASUS\anaconda3\Lib\site-packages\sklearn\preprocessing\_encoders.py", line 1598, in transform
+    X_int, X_mask = self._transform(
+                    ~~~~~~~~~~~~~~~^
+        X,
+        ^^
+    ...<2 lines>...
+        ignore_category_indices=self._missing_indices,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\ASUS\anaconda3\Lib\site-packages\sklearn\preprocessing\_encoders.py", line 220, in _transform
+    raise ValueError(msg)
+ValueError: Found unknown categories ['Moderate'] in column 0 during transform
+
+DF Info:
+age             float64
+weight          float64
+height          float64
+exercise         object
+sleep           float64
+sugar_intake     object
+smoking          object
+alcohol          object
+married          object
+profession       object
+bmi             float64
+dtype: object
+    age  weight  height  exercise  ...  alcohol married profession   bmi
+0  30.0    70.0   175.0  Moderate  ...       No      No         IT  22.8
+
+[1 rows x 11 columns]
