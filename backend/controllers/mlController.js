@@ -228,28 +228,140 @@ const analyzeRisk = async (req, res) => {
     }
 };
 
-// @desc    Mock Chatbot Response
+// @desc    Chatbot Response via RAG
 // @route   POST /api/chatbot
 // @access  Private
 const chatbotResponse = async (req, res) => {
     try {
-        // TODO: Replace this dummy logic with actual ML model integration
-        // TODO: Integrate Python ML model via API (Flask/FastAPI)
+        const inputData = JSON.stringify(req.body);
+        const scriptPath = path.join(__dirname, '..', 'chatbot.py');
+        const pythonProcess = spawn('python', [scriptPath]);
 
-        const { message } = req.body;
+        let resultData = '';
+        let errorData = '';
 
-        // Mock Response Data
-        const mockResult = {
-            reply: `You said: "${message}". I am a medical chatbot placeholder. I cannot provide real medical advice yet.`,
-            note: "This is a placeholder response. Real AI not integrated."
-        };
+        pythonProcess.stdout.on('data', (data) => {
+            resultData += data.toString();
+        });
 
-        // Simulate network delay
-        setTimeout(() => {
-            res.status(200).json({ success: true, data: mockResult });
-        }, 1000);
+        pythonProcess.stderr.on('data', (data) => {
+            errorData += data.toString();
+        });
+
+        pythonProcess.on('close', (code) => {
+            if (code !== 0) {
+                console.error(`chatbot.py exited with code ${code}: ${errorData}`);
+                return res.status(500).json({ success: false, message: 'Error running chatbot AI', error: errorData });
+            }
+
+            try {
+                const jsonStr = resultData.substring(resultData.indexOf('{'), resultData.lastIndexOf('}') + 1);
+                if (!jsonStr) {
+                    throw new Error("No JSON found in python output");
+                }
+                const resultJson = JSON.parse(jsonStr);
+                if (resultJson.error) {
+                    return res.status(500).json({ success: false, message: 'Chatbot Error', error: resultJson.error });
+                }
+                res.status(200).json({ success: true, data: resultJson });
+            } catch (err) {
+                console.error('Failed to parse chatbot output:', resultData);
+                res.status(500).json({ success: false, message: 'Invalid chatbot output', error: err.message, raw: resultData });
+            }
+        });
+
+        pythonProcess.stdin.write(inputData);
+        pythonProcess.stdin.end();
+
     } catch (error) {
         res.status(500).json({ message: 'Server Error', error: error.message });
+    }
+};
+
+// @desc    Get Heart Model Info (features)
+// @route   GET /api/predict-heart/info
+// @access  Private
+const getHeartInfo = async (req, res) => {
+    try {
+        const scriptPath = path.join(__dirname, '..', 'predict_heart.py');
+        const pythonProcess = spawn('python', [scriptPath, '--info']);
+
+        let resultData = '';
+        let errorData = '';
+
+        pythonProcess.stdout.on('data', (data) => {
+            resultData += data.toString();
+        });
+        pythonProcess.stderr.on('data', (data) => {
+            errorData += data.toString();
+        });
+
+        pythonProcess.on('close', (code) => {
+            if (code !== 0) {
+                console.error(`predict_heart.py --info exited with code ${code}: ${errorData}`);
+                return res.status(500).json({ success: false, message: 'Error fetching heart model info', error: errorData });
+            }
+            try {
+                const jsonStr = resultData.substring(resultData.indexOf('{'), resultData.lastIndexOf('}') + 1);
+                const resultJson = JSON.parse(jsonStr);
+                if (resultJson.error) {
+                    return res.status(500).json({ success: false, message: 'Model Error', error: resultJson.error });
+                }
+                res.status(200).json({ success: true, data: resultJson });
+            } catch (err) {
+                console.error('Failed to parse heart model info output:', resultData);
+                res.status(500).json({ success: false, message: 'Invalid python output', error: err.message });
+            }
+        });
+    } catch (error) {
+        res.status(500).json({ success: false, message: 'Server Error', error: error.message });
+    }
+};
+
+// @desc    Predict Heart Disease Risk
+// @route   POST /api/predict-heart
+// @access  Private
+const predictHeart = async (req, res) => {
+    try {
+        const inputData = JSON.stringify(req.body);
+        const scriptPath = path.join(__dirname, '..', 'predict_heart.py');
+        const pythonProcess = spawn('python', [scriptPath]);
+
+        let resultData = '';
+        let errorData = '';
+
+        pythonProcess.stdout.on('data', (data) => {
+            resultData += data.toString();
+        });
+
+        pythonProcess.stderr.on('data', (data) => {
+            errorData += data.toString();
+        });
+
+        pythonProcess.on('close', (code) => {
+            if (code !== 0) {
+                console.error(`predict_heart.py exited with code ${code}: ${errorData}`);
+                return res.status(500).json({ success: false, message: 'Error running heart prediction model', error: errorData });
+            }
+
+            try {
+                const jsonStr = resultData.substring(resultData.indexOf('{'), resultData.lastIndexOf('}') + 1);
+                const resultJson = JSON.parse(jsonStr);
+                if (resultJson.error) {
+                    return res.status(500).json({ success: false, message: 'Model Error', error: resultJson.error, trace: resultJson.trace });
+                }
+                res.status(200).json({ success: true, data: resultJson });
+            } catch (err) {
+                console.error('Failed to parse heart prediction output:', resultData);
+                res.status(500).json({ success: false, message: 'Invalid prediction output', error: err.message });
+            }
+        });
+
+        pythonProcess.stdin.write(inputData);
+        pythonProcess.stdin.end();
+
+    } catch (error) {
+        res.status(500).json({ success: false, message: 'Server Error', error: error.message });
     }
 };
 
@@ -259,5 +371,7 @@ module.exports = {
     getGeneralSymptoms,
     getRiskInfo,
     analyzeRisk,
-    chatbotResponse
+    chatbotResponse,
+    getHeartInfo,
+    predictHeart
 };

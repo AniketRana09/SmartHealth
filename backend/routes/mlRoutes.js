@@ -1,12 +1,14 @@
 const express = require('express');
 const router = express.Router();
-const { predictDisease, predictGeneral, getGeneralSymptoms, getRiskInfo, analyzeRisk, chatbotResponse } = require('../controllers/mlController');
+const { predictDisease, predictGeneral, getGeneralSymptoms, getRiskInfo, analyzeRisk, chatbotResponse, getHeartInfo, predictHeart } = require('../controllers/mlController');
 const { protect } = require('../middleware/authMiddleware');
 
 // ML endpoints (protected routes)
 router.post('/predict', protect, predictDisease);
 router.post('/predict-general', protect, predictGeneral);
 router.get('/predict-general/symptoms', protect, getGeneralSymptoms);
+router.get('/predict-heart/info', protect, getHeartInfo);
+router.post('/predict-heart', protect, predictHeart);
 router.get('/debug-risk-info', (req, res) => {
     const { spawn } = require('child_process');
     const path = require('path');

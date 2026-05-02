@@ -34,9 +34,77 @@ const DiseasePrediction = () => {
   const [symptomsLoading, setSymptomsLoading] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
 
+  const [heartFeatures, setHeartFeatures] = useState([]);
+  const [heartFormData, setHeartFormData] = useState({});
+  const [heartInfoLoading, setHeartInfoLoading] = useState(false);
+
+  const fetchHeartFeatures = async () => {
+    setHeartInfoLoading(true);
+    try {
+      const token = localStorage.getItem('token');
+      const res = await axios.get('http://localhost:5000/api/predict-heart/info', {
+        headers: { Authorization: `Bearer ${token}` }
+      });
+      if (res.data && res.data.data && res.data.data.features) {
+        setHeartFeatures(res.data.data.features);
+        const initialData = {};
+        res.data.data.features.forEach(f => {
+          initialData[f] = '';
+        });
+        setHeartFormData(initialData);
+      }
+    } catch (err) {
+      console.error(err);
+      setError('Failed to fetch heart model info.');
+    } finally {
+      setHeartInfoLoading(false);
+    }
+  };
+
+  const handleHeartChange = (feature, value) => {
+    setHeartFormData(prev => ({ ...prev, [feature]: value }));
+  };
+
+  const handleHeartSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setError('');
+    setResult(null);
+
+    try {
+      const token = localStorage.getItem('token');
+      const parsedData = {};
+      Object.keys(heartFormData).forEach(k => {
+        const val = parseFloat(heartFormData[k]);
+        parsedData[k] = isNaN(val) ? heartFormData[k] : val;
+      });
+
+      const res = await axios.post(
+        'http://localhost:5000/api/predict-heart',
+        parsedData,
+        { headers: { Authorization: `Bearer ${token}` } }
+      );
+      setResult(res.data.data);
+    } catch (err) {
+      if (err.response && err.response.data && err.response.data.error) {
+        setError(`Backend Error: ${err.response.data.error}`);
+      } else if (err.response && err.response.data && err.response.data.message) {
+        setError(`Backend Error: ${err.response.data.message}`);
+      } else {
+        setError('Error: ' + err.message);
+      }
+      console.error(err);
+    } finally {
+      setLoading(false);
+    }
+  };
+
   useEffect(() => {
     if (activePrediction === 'general' && generalSymptomsList.length === 0) {
       fetchGeneralSymptoms();
+    }
+    if (activePrediction === 'heart' && heartFeatures.length === 0) {
+      fetchHeartFeatures();
     }
   }, [activePrediction]);
 
@@ -300,6 +368,140 @@ const DiseasePrediction = () => {
   );
 
 
+  const renderHeartForm = () => (
+    <>
+      <button
+        onClick={() => { setActivePrediction(null); setResult(null); setError(''); }}
+        className="flex items-center text-slate-500 hover:text-red-600 mb-6 transition"
+      >
+        <ArrowLeft size={20} className="mr-2" /> Back to Models
+      </button>
+      <h1 className="text-3xl font-bold text-slate-800 mb-6">Heart Disease Prediction</h1>
+
+      <div className="grid lg:grid-cols-2 gap-8">
+        <div className="card border-t-4 border-t-red-500">
+          <h2 className="text-xl font-semibold text-slate-700 mb-4">Patient Metrics</h2>
+          {heartInfoLoading ? (
+            <div className="flex justify-center py-8">
+              <span className="animate-spin h-8 w-8 border-4 border-red-500 border-t-transparent rounded-full"></span>
+            </div>
+          ) : heartFeatures.length > 0 ? (
+            <form onSubmit={handleHeartSubmit} className="space-y-4">
+              <div className="grid grid-cols-2 gap-4">
+                {heartFeatures.map((feature, idx) => {
+                  const dropdownOptions = {
+                    sex: [{label: 'Female', value: 0}, {label: 'Male', value: 1}],
+                    cp: [{label: 'Typical Angina', value: 0}, {label: 'Atypical Angina', value: 1}, {label: 'Non-anginal Pain', value: 2}, {label: 'Asymptomatic', value: 3}],
+                    chestpaintype: [{label: 'Typical Angina', value: 0}, {label: 'Atypical Angina', value: 1}, {label: 'Non-anginal Pain', value: 2}, {label: 'Asymptomatic', value: 3}],
+                    fbs: [{label: 'False (< 120 mg/dl)', value: 0}, {label: 'True (> 120 mg/dl)', value: 1}],
+                    fastingbs: [{label: 'False (< 120 mg/dl)', value: 0}, {label: 'True (> 120 mg/dl)', value: 1}],
+                    restecg: [{label: 'Normal', value: 0}, {label: 'ST-T Wave Abnormality', value: 1}, {label: 'Left Ventricular Hypertrophy', value: 2}],
+                    restingecg: [{label: 'Normal', value: 0}, {label: 'ST-T Wave Abnormality', value: 1}, {label: 'Left Ventricular Hypertrophy', value: 2}],
+                    exang: [{label: 'No', value: 0}, {label: 'Yes', value: 1}],
+                    exerciseangina: [{label: 'No', value: 0}, {label: 'Yes', value: 1}],
+                    slope: [{label: 'Upsloping', value: 0}, {label: 'Flat', value: 1}, {label: 'Downsloping', value: 2}],
+                    st_slope: [{label: 'Upsloping', value: 0}, {label: 'Flat', value: 1}, {label: 'Downsloping', value: 2}],
+                    ca: [{label: '0', value: 0}, {label: '1', value: 1}, {label: '2', value: 2}, {label: '3', value: 3}],
+                    thal: [{label: 'Normal', value: 1}, {label: 'Fixed Defect', value: 2}, {label: 'Reversable Defect', value: 3}],
+                  };
+
+                  const featLower = feature.toLowerCase();
+                  const isDropdown = Object.keys(dropdownOptions).includes(featLower);
+                  const options = isDropdown ? dropdownOptions[featLower] : [];
+                  
+                  return (
+                    <div key={idx}>
+                      <label className="block text-sm font-medium text-slate-700 mb-1 capitalize">
+                        {feature.replace(/_/g, ' ')}
+                      </label>
+                      {isDropdown ? (
+                         <select
+                           className="input-field w-full bg-white"
+                           value={heartFormData[feature] !== undefined ? heartFormData[feature] : ''}
+                           onChange={(e) => handleHeartChange(feature, e.target.value)}
+                           required
+                         >
+                           <option value="" disabled>Select {feature.replace(/_/g, ' ')}</option>
+                           {options.map(opt => (
+                             <option key={opt.value} value={opt.value}>{opt.label}</option>
+                           ))}
+                         </select>
+                      ) : (
+                        <input
+                          type="number"
+                          step="any"
+                          className="input-field w-full"
+                          value={heartFormData[feature] !== undefined ? heartFormData[feature] : ''}
+                          onChange={(e) => handleHeartChange(feature, e.target.value)}
+                          required
+                          placeholder={`Enter ${feature}`}
+                        />
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
+              <button
+                type="submit"
+                className="btn-primary bg-red-600 hover:bg-red-700 w-full flex justify-center items-center mt-6 shadow-md"
+                disabled={loading}
+              >
+                {loading ? (
+                  <span className="animate-spin h-5 w-5 border-2 border-white border-t-transparent rounded-full mr-2"></span>
+                ) : null}
+                {loading ? 'Analyzing...' : 'Predict Heart Risk'}
+              </button>
+            </form>
+          ) : (
+            <div className="text-red-500 bg-red-50 p-4 rounded-lg">
+              Could not load model features. Please ensure the backend is running.
+            </div>
+          )}
+        </div>
+
+        <div className="card bg-slate-100 border-none">
+          <h2 className="text-xl font-semibold text-slate-700 mb-4">Analysis Result</h2>
+          {error && <div className="text-red-500 mb-4 bg-red-50 p-3 rounded">{error}</div>}
+
+          {!result && !loading && !error && (
+            <div className="text-slate-500 italic flex items-center justify-center h-48 border-2 border-dashed border-slate-300 rounded-lg">
+              Submit patient metrics to see predictions.
+            </div>
+          )}
+
+          {result && (
+            <div className="space-y-4 bg-white p-6 rounded-lg shadow-sm border border-red-100">
+              <div>
+                <h4 className="text-sm font-semibold text-red-600 uppercase tracking-wide">Predicted Condition</h4>
+                <p className="text-2xl font-bold text-slate-800">{result.prediction}</p>
+              </div>
+              <div className="grid grid-cols-2 gap-4 border-t border-b border-slate-100 py-4">
+                <div>
+                  <h4 className="text-sm font-medium text-slate-500 mb-1">Risk Level</h4>
+                  <span className={`px-3 py-1 rounded-full text-sm font-medium ${result.risk_level === 'Low' ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'}`}>
+                    {result.risk_level}
+                  </span>
+                </div>
+                {result.probability && (
+                  <div>
+                    <h4 className="text-sm font-medium text-slate-500 mb-1">Probability</h4>
+                    <p className="text-lg font-semibold text-slate-700">{result.probability}</p>
+                  </div>
+                )}
+              </div>
+              <div>
+                <h4 className="text-sm font-semibold text-slate-700 mb-1">Recommendation</h4>
+                <p className="text-slate-600">{result.recommendation}</p>
+              </div>
+              <div className="mt-4 p-3 bg-red-50 border border-red-100 text-red-800 text-sm rounded-lg italic">
+                Note: {result.note}
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+    </>
+  );
 
   const renderPlaceholder = (title) => (
     <>
@@ -460,7 +662,7 @@ const DiseasePrediction = () => {
       <div className="flex-1 p-8">
         {!activePrediction && renderSelectionCards()}
         {activePrediction === 'diabetes' && renderDiabetesForm()}
-        {activePrediction === 'heart' && renderPlaceholder('Heart Disease')}
+        {activePrediction === 'heart' && renderHeartForm()}
         {activePrediction === 'general' && renderGeneralForm()}
       </div>
     </div>

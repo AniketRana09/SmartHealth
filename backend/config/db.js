@@ -2,8 +2,7 @@ const mongoose = require('mongoose');
 
 const connectDB = async () => {
     try {
-        // TODO: Add your MongoDB connection string to the .env file as MONGO_URI
-        // Example: MONGO_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/healthcare
+
         const uri = process.env.MONGO_URI;
 
         if (!uri || uri.trim() === '') {

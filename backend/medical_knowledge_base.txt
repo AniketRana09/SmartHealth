@@ -1,0 +1,909 @@
+================================================================
+MEDICAL KNOWLEDGE BASE FOR RAG CHATBOT
+General Health, Common Diseases, Medicines & Diet Guide
+================================================================
+DISCLAIMER: This information is for general educational purposes only.
+Always consult a licensed doctor before taking any medication.
+================================================================
+
+
+================================================================
+SECTION 1: COMMON COLD & FLU
+================================================================
+
+DISEASE: Common Cold
+SYMPTOMS: Runny or stuffy nose, sore throat, cough, sneezing, mild headache, mild fever (below 101°F), body aches, fatigue.
+CAUSES: Rhinovirus (most common), coronavirus, adenovirus. Spreads through droplets and contact.
+DURATION: 7–10 days.
+WHEN TO SEE A DOCTOR: Fever above 103°F, symptoms lasting more than 10 days, difficulty breathing, severe sore throat.
+
+MEDICINES (Common Cold):
+- Paracetamol (Acetaminophen) 500mg – for fever and pain relief. Adults: 1–2 tablets every 4–6 hours. Max 4g/day.
+- Cetirizine 10mg – antihistamine for runny nose and sneezing. 1 tablet at night.
+- Phenylephrine – decongestant for stuffy nose.
+- Dextromethorphan – cough suppressant for dry cough.
+- Guaifenesin – expectorant for wet/productive cough.
+- Vitamin C 500–1000mg daily – supports immune system.
+- Zinc lozenges – may reduce cold duration.
+
+DIET FOR COMMON COLD:
+- Drink plenty of warm fluids: herbal teas, warm water with lemon and honey, soups.
+- Chicken soup – helps reduce inflammation and keeps hydrated.
+- Ginger tea with honey – natural anti-inflammatory.
+- Garlic – contains allicin, a natural antimicrobial compound.
+- Turmeric milk (golden milk) – anti-inflammatory.
+- Citrus fruits (oranges, lemons) – high in Vitamin C.
+- Avoid: cold drinks, ice cream, dairy products (can increase mucus), alcohol, processed foods.
+- Foods to eat: broth-based soups, boiled vegetables, khichdi, dal, bananas, toast.
+
+HOME REMEDIES:
+- Steam inhalation with eucalyptus oil.
+- Salt water gargling (1/4 tsp salt in warm water).
+- Nasal saline rinse.
+- Rest and adequate sleep.
+- Honey and ginger juice mixed together – 1 tsp twice daily.
+
+---
+
+DISEASE: Influenza (Flu)
+SYMPTOMS: Sudden high fever (100–104°F), severe body aches, chills, headache, dry cough, fatigue, sore throat, vomiting and diarrhea (more common in children).
+CAUSES: Influenza A or B viruses. Spreads through respiratory droplets.
+DURATION: 1–2 weeks.
+WHEN TO SEE A DOCTOR: Difficulty breathing, persistent chest pain, confusion, severe vomiting, symptoms improving then returning with worsening cough.
+
+MEDICINES (Flu):
+- Oseltamivir (Tamiflu) – antiviral, most effective if taken within 48 hours of symptoms. 75mg twice daily for 5 days.
+- Paracetamol or Ibuprofen – for fever and pain.
+- Cetirizine or Loratadine – for nasal symptoms.
+- ORS (Oral Rehydration Solution) – if dehydration occurs.
+
+DIET FOR FLU:
+- Plenty of warm water and fluids.
+- Electrolyte drinks (coconut water, ORS, sports drinks).
+- Light, easily digestible food: khichdi, rice porridge, boiled vegetables.
+- Vitamin C rich foods: amla, oranges, guava.
+- Turmeric and ginger in food.
+- Avoid heavy, oily, and spicy foods.
+- Avoid alcohol and caffeine.
+
+
+================================================================
+SECTION 2: FEVER
+================================================================
+
+DISEASE: Fever (General)
+NORMAL TEMPERATURE: 98.6°F (37°C)
+LOW-GRADE FEVER: 99–100.4°F
+HIGH FEVER: Above 103°F (39.4°C)
+CAUSES: Infection (bacterial, viral, fungal), inflammation, heat stroke, medication reactions.
+SYMPTOMS: Elevated body temperature, sweating, chills, headache, muscle aches, loss of appetite, dehydration.
+WHEN TO SEE A DOCTOR: Fever above 103°F, fever lasting more than 3 days, fever with rash, stiff neck, confusion, difficulty breathing.
+
+MEDICINES (Fever):
+- Paracetamol 500–1000mg every 6 hours – first-line fever reducer.
+- Ibuprofen 400mg every 8 hours – anti-inflammatory and fever reducer (avoid on empty stomach).
+- Aspirin – not recommended for children under 18 (risk of Reye's syndrome).
+- Cold compress on forehead – helps reduce fever.
+
+DIET FOR FEVER:
+- Increase fluid intake dramatically: water, coconut water, diluted fruit juices, soups.
+- ORS solution to prevent dehydration.
+- Light foods: rice congee, khichdi, dal, boiled potatoes.
+- Fruits: watermelon, cucumber, oranges (cooling and hydrating).
+- Avoid: spicy food, oily food, heavy proteins, raw vegetables.
+- Do NOT force-feed; eat small meals frequently.
+
+
+================================================================
+SECTION 3: HEADACHE & MIGRAINE
+================================================================
+
+DISEASE: Tension Headache
+SYMPTOMS: Dull, aching pain, tightness or pressure across forehead, pain on sides and back of head, scalp tenderness.
+CAUSES: Stress, poor posture, eye strain, dehydration, lack of sleep, skipping meals.
+
+MEDICINES (Tension Headache):
+- Paracetamol 500–1000mg – first-line treatment.
+- Ibuprofen 400mg – effective for tension and inflammation.
+- Aspirin 300–600mg – alternative pain relief.
+- Avoid overuse of pain killers (more than 10 days/month can cause rebound headaches).
+
+DIET FOR HEADACHE:
+- Stay well-hydrated (dehydration is a major trigger).
+- Regular meal timings (skipping meals triggers headaches).
+- Magnesium-rich foods: dark chocolate, nuts, leafy greens, avocado.
+- Foods to avoid: alcohol (especially red wine), caffeine (or sudden caffeine withdrawal), processed meats with nitrates, MSG (found in packaged snacks), aged cheese.
+- Eat anti-inflammatory foods: salmon, walnuts, olive oil, berries.
+
+---
+
+DISEASE: Migraine
+SYMPTOMS: Throbbing pain (usually one side), nausea, vomiting, sensitivity to light and sound, visual aura (flashing lights), lasts 4–72 hours.
+CAUSES: Hormonal changes, stress, sleep disturbances, certain foods, bright lights, strong smells, weather changes.
+WHEN TO SEE A DOCTOR: Sudden severe headache, headache with fever and stiff neck, headache after head injury, progressive worsening headaches.
+
+MEDICINES (Migraine):
+- Sumatriptan (Imitrex) 50–100mg – triptan, most effective for acute migraine attacks. Take at onset.
+- Ibuprofen 400–600mg or Naproxen 500mg – for mild to moderate attacks.
+- Domperidone or Metoclopramide – for nausea and vomiting associated with migraine.
+- Aspirin + Metoclopramide combination – effective acute treatment.
+- Preventive (ask doctor): Propranolol, Amitriptyline, Topiramate, Valproate.
+
+DIET FOR MIGRAINE:
+- Keep a food diary to identify personal triggers.
+- Common dietary triggers: red wine, aged cheese, chocolate, caffeine, MSG, artificial sweeteners, citrus fruits (for some people), alcohol.
+- Helpful foods: Magnesium-rich foods (spinach, pumpkin seeds), omega-3 rich foods (salmon, flaxseed), riboflavin (Vitamin B2) from eggs, milk, almonds.
+- Eat regular meals; never skip breakfast.
+- Stay hydrated throughout the day.
+- Limit caffeine to 1 cup per day.
+
+
+================================================================
+SECTION 4: DIGESTIVE ISSUES
+================================================================
+
+DISEASE: Acidity / GERD (Gastroesophageal Reflux Disease)
+SYMPTOMS: Heartburn (burning sensation in chest), sour/bitter taste in mouth, regurgitation, bloating, nausea, difficulty swallowing, hoarse voice.
+CAUSES: Weak lower esophageal sphincter, obesity, pregnancy, spicy/oily food, caffeine, smoking, alcohol, lying down after eating.
+WHEN TO SEE A DOCTOR: Difficulty swallowing, unexplained weight loss, vomiting blood, black tarry stools.
+
+MEDICINES (Acidity/GERD):
+- Antacids (immediate relief): Gelusil, Eno, Digene, Mylanta – neutralize stomach acid. Take after meals and at bedtime.
+- H2 blockers: Ranitidine 150mg or Famotidine 20mg – reduce acid production. Take 30 min before meals.
+- Proton Pump Inhibitors (PPIs): Omeprazole 20mg, Pantoprazole 40mg, Esomeprazole 40mg – most effective, take before breakfast. Use for 4–8 weeks.
+- Domperidone 10mg – improves stomach emptying, reduces nausea.
+- Sucralfate – coats and protects stomach lining.
+
+DIET FOR ACIDITY:
+- Eat small, frequent meals (5–6 small meals instead of 3 large).
+- Do not lie down for at least 2 hours after eating.
+- Elevate head of bed by 6–8 inches if nighttime reflux.
+- Avoid: spicy foods, citrus fruits, tomatoes, onions, garlic, chocolate, mint, coffee, tea, alcohol, carbonated drinks, fried/fatty foods.
+- Eat: bananas, melons, oatmeal, lean proteins (chicken, fish), non-citrus vegetables, ginger tea, coconut water, cold milk (temporary relief), fennel seeds after meals.
+- Drink water 30 min before meals, not during or immediately after.
+- Lose weight if overweight.
+- Avoid tight-fitting clothes around the abdomen.
+
+---
+
+DISEASE: Constipation
+SYMPTOMS: Less than 3 bowel movements per week, hard/dry stools, straining during bowel movements, feeling of incomplete evacuation, abdominal bloating.
+CAUSES: Low fiber diet, inadequate water intake, physical inactivity, medications (iron, calcium, antacids), stress, ignoring urge to defecate.
+
+MEDICINES (Constipation):
+- Ispaghula husk (Psyllium/Isabgol) – bulk-forming laxative. Mix 1–2 tsp in water, take before bed. Drink plenty of water.
+- Lactulose syrup – osmotic laxative, softens stool. 15–30ml daily.
+- Bisacodyl 5mg tablet or suppository – stimulant laxative, for short-term use only.
+- Glycerin suppository – for immediate relief.
+- Polyethylene glycol (MiraLax) – osmotic laxative, gentle.
+- Avoid prolonged use of stimulant laxatives (dependency).
+
+DIET FOR CONSTIPATION:
+- High fiber foods (25–35g fiber/day): whole wheat bread, oats, lentils, beans, peas, brown rice, fruits with skin (apples, pears, guava), vegetables (broccoli, carrots, spinach).
+- Prunes and prune juice – natural laxative effect.
+- Flaxseeds – add 1 tbsp ground flaxseed to food daily.
+- Drink 8–10 glasses of water per day.
+- Warm water with lemon in the morning on empty stomach.
+- Exercise regularly – even 20–30 min walk helps bowel movements.
+- Avoid: white bread, white rice, processed foods, red meat, dairy in excess, alcohol, caffeine.
+- Eat papaya – contains papain enzyme that aids digestion.
+- Dates soaked overnight – natural remedy for constipation.
+
+---
+
+DISEASE: Diarrhea
+SYMPTOMS: Loose, watery stools 3+ times/day, abdominal cramps, nausea, vomiting, fever, blood in stool (severe cases).
+CAUSES: Viral gastroenteritis, bacterial infection (Salmonella, E.coli), food poisoning, lactose intolerance, IBS, antibiotics, traveler's diarrhea.
+WHEN TO SEE A DOCTOR: Signs of severe dehydration, blood in stool, high fever, symptoms lasting more than 2 days in adults, 24 hours in children.
+
+MEDICINES (Diarrhea):
+- ORS (Oral Rehydration Solution) – MOST IMPORTANT. Prevents and treats dehydration. Give frequently in small sips.
+- Loperamide (Imodium) 2mg – reduces frequency, for non-infectious diarrhea. Not for bloody diarrhea.
+- Zinc tablets 20mg – for children, reduces severity and duration of diarrhea.
+- Probiotics: Lactobacillus, Saccharomyces boulardii – restore gut flora.
+- Antibiotics (only if bacterial cause confirmed by doctor): Ciprofloxacin, Metronidazole.
+- Racecadotril – reduces intestinal secretions.
+
+DIET FOR DIARRHEA (BRAT Diet):
+- Bananas – replaces potassium lost, easy to digest.
+- Rice (white, plain boiled) – binding food, easy on stomach.
+- Applesauce – contains pectin, helps firm stools.
+- Toast (plain white) – bland, easy to digest.
+- Other safe foods: boiled potatoes (no skin), plain crackers, boiled chicken, yogurt with probiotics, coconut water.
+- Khichdi (rice + lentil porridge) – excellent traditional remedy.
+- Avoid: dairy (except yogurt), fatty foods, high-fiber foods, sugary foods/drinks, spicy food, caffeine, alcohol.
+- Drink plenty of fluids to replace what's lost.
+
+---
+
+DISEASE: Nausea and Vomiting
+SYMPTOMS: Feeling of wanting to vomit, actual vomiting, sweating, excess saliva, dizziness.
+CAUSES: Motion sickness, pregnancy, gastroenteritis, food poisoning, medications, GERD, migraine, anxiety.
+
+MEDICINES (Nausea/Vomiting):
+- Domperidone 10mg – prokinetic, take 30 min before meals.
+- Ondansetron 4–8mg – strong antiemetic, effective for severe nausea.
+- Metoclopramide 10mg – antiemetic and prokinetic.
+- Promethazine – antihistamine antiemetic, also for motion sickness.
+- ORS – to prevent dehydration from vomiting.
+
+DIET FOR NAUSEA:
+- Ginger tea or ginger candies – scientifically proven to reduce nausea.
+- Small, frequent meals.
+- Cold, clear beverages: ice chips, chilled water, clear broth.
+- Plain crackers or dry toast – especially first thing in the morning for pregnancy nausea.
+- Avoid: strong odors, spicy food, fatty food, large meals.
+- Peppermint tea – calming effect on stomach.
+- Lemon water or lemon scent – can help reduce nausea.
+- Cold foods often better tolerated than hot foods.
+
+
+================================================================
+SECTION 5: DIABETES
+================================================================
+
+DISEASE: Type 2 Diabetes
+SYMPTOMS: Frequent urination (polyuria), excessive thirst (polydipsia), excessive hunger (polyphagia), unexplained weight loss, fatigue, blurred vision, slow wound healing, frequent infections, tingling or numbness in hands/feet.
+NORMAL BLOOD SUGAR: Fasting: 70–99 mg/dL | Post-meal (2hr): <140 mg/dL | HbA1c: <5.7%
+PREDIABETES: Fasting 100–125 mg/dL | HbA1c: 5.7–6.4%
+DIABETES: Fasting ≥126 mg/dL | HbA1c ≥6.5%
+
+MEDICINES (Type 2 Diabetes):
+- Metformin 500–2000mg/day – first-line medicine, reduces liver glucose production. Take with meals.
+- Glipizide/Glibenclamide – stimulates insulin secretion (sulfonylureas).
+- Sitagliptin (Januvia) 100mg – DPP-4 inhibitor, increases insulin.
+- Empagliflozin (Jardiance) – SGLT-2 inhibitor, removes glucose through urine, also protects heart and kidneys.
+- Insulin injections – for advanced diabetes when oral medicines insufficient.
+- Aspirin 75mg – for cardiovascular risk reduction (if recommended by doctor).
+
+DIET FOR DIABETES:
+- Eat low glycemic index (GI) foods: oats, barley, legumes, lentils, non-starchy vegetables.
+- Avoid high GI foods: white bread, white rice, sugary drinks, sweets, cakes, potatoes.
+- Replace white rice with brown rice, millets (bajra, jowar, ragi), or quinoa.
+- Eat more fiber: vegetables, whole grains, beans – slows glucose absorption.
+- Include bitter gourd (karela) – natural blood sugar lowering.
+- Fenugreek seeds (methi) – soak overnight, drink water or eat seeds in morning.
+- Portion control – use smaller plates, eat slowly.
+- 3 main meals + 2 healthy snacks per day.
+- Do not skip meals (especially on medication).
+- Healthy snacks: handful of nuts, seeds, low-fat yogurt, cucumber.
+- Avoid: sugar, sweets, mithai, soft drinks, fruit juices, packaged foods, white flour (maida).
+- Limit fruits high in sugar: mangoes, grapes, bananas, chikoo (eat in moderation).
+- Best fruits for diabetics: berries, guava, papaya, apple (with skin), pears, jamun (Indian blackberry).
+- Drink water and chaas (buttermilk) instead of sugary beverages.
+- Exercise: 30 minutes brisk walking daily significantly lowers blood sugar.
+
+DIABETIC COMPLICATIONS TO WATCH:
+- Hypoglycemia (low blood sugar <70 mg/dL): shakiness, sweating, confusion – eat 15g fast-acting carb (glucose tablets, sugar, juice) immediately.
+- Monitor blood sugar regularly.
+- Foot care: inspect feet daily, avoid tight shoes, report any wounds.
+
+
+================================================================
+SECTION 6: HYPERTENSION (HIGH BLOOD PRESSURE)
+================================================================
+
+DISEASE: Hypertension
+NORMAL BP: <120/80 mmHg
+ELEVATED: 120–129 / <80 mmHg
+STAGE 1 HYPERTENSION: 130–139 / 80–89 mmHg
+STAGE 2 HYPERTENSION: ≥140 / ≥90 mmHg
+HYPERTENSIVE CRISIS: >180 / >120 mmHg (Emergency!)
+SYMPTOMS: Often called "silent killer" – usually no symptoms. Severe: headache at back of head, blurred vision, nosebleeds, dizziness, shortness of breath.
+CAUSES: Genetics, obesity, sedentary lifestyle, high salt diet, stress, smoking, alcohol, kidney disease, hormonal disorders.
+WHEN TO SEE A DOCTOR: BP consistently ≥130/80 mmHg, severe headache with high BP, chest pain, difficulty breathing.
+
+MEDICINES (Hypertension):
+- Amlodipine 5–10mg – calcium channel blocker, once daily. Most common first-line.
+- Losartan 25–100mg – ARB (angiotensin receptor blocker), kidney-protective.
+- Enalapril/Ramipril – ACE inhibitor, protects heart and kidneys.
+- Atenolol/Metoprolol – beta-blocker, slows heart rate.
+- Hydrochlorothiazide (HCTZ) 12.5–25mg – diuretic, reduces fluid.
+- Combination therapy often needed. NEVER stop BP medicines suddenly.
+
+DIET FOR HYPERTENSION (DASH Diet):
+- Reduce sodium (salt) intake to <2300mg/day (ideally <1500mg/day). Avoid adding extra salt.
+- Increase potassium: bananas, oranges, potatoes, tomatoes, leafy greens, beans.
+- Increase magnesium: nuts, seeds, whole grains, leafy vegetables.
+- Increase calcium: low-fat dairy, kale, broccoli, tofu.
+- Eat more: fruits, vegetables, whole grains, lean proteins (fish, chicken), legumes, nuts.
+- Reduce: red meat, full-fat dairy, sweets, sugary beverages.
+- Avoid: pickles, papads, packaged snacks, processed meats, canned foods (all high in sodium).
+- Limit alcohol: max 1 drink/day for women, 2 for men.
+- Avoid smoking.
+- Maintain healthy weight (every 1 kg loss reduces BP by ~1 mmHg).
+- Exercise: 150 min/week moderate aerobic activity (brisk walking, cycling, swimming).
+- Reduce stress: yoga, meditation, deep breathing.
+- Garlic – shown to modestly reduce BP. Include in cooking.
+- Hibiscus tea (gudhal) – may help reduce BP mildly.
+
+
+================================================================
+SECTION 7: RESPIRATORY CONDITIONS
+================================================================
+
+DISEASE: Asthma
+SYMPTOMS: Wheezing, shortness of breath, chest tightness, cough (especially at night or early morning). Symptoms may be triggered by exercise, cold air, allergens, smoke.
+CAUSES: Airway inflammation and hyperresponsiveness. Triggers: dust mites, pet dander, pollen, mold, cold air, exercise, smoke, strong odors, stress.
+WHEN TO SEE A DOCTOR: Severe breathlessness, lips/fingernails turning blue, using neck muscles to breathe, no relief from rescue inhaler.
+
+MEDICINES (Asthma):
+- Salbutamol (Ventolin) inhaler – bronchodilator, short-acting, used during attacks (rescue inhaler). 2 puffs as needed.
+- Budesonide inhaler – inhaled corticosteroid, used daily for prevention (controller inhaler).
+- Formoterol/Salmeterol – long-acting bronchodilator, used with steroid inhaler for prevention.
+- Montelukast 10mg – leukotriene modifier, taken at night for prevention and allergic asthma.
+- Oral prednisolone – for severe attacks (short courses only, as prescribed by doctor).
+- Ipratropium inhaler – anticholinergic bronchodilator.
+
+DIET FOR ASTHMA:
+- Vitamin D: sunlight exposure, eggs, fortified milk (deficiency linked to worse asthma).
+- Vitamin C: citrus fruits, bell peppers, strawberries (antioxidant, reduces inflammation).
+- Omega-3 fatty acids: fish (salmon, mackerel), walnuts, flaxseeds (anti-inflammatory).
+- Magnesium: spinach, pumpkin seeds, almonds (helps relax bronchial muscles).
+- Avoid known food triggers: sulfites (in wine, dried fruits, preserved foods), food colorings.
+- Avoid: cold foods and drinks, ice cream, fried foods.
+- Honey and ginger – traditional remedies that may help soothe airways.
+- Turmeric in warm milk – anti-inflammatory.
+- Avoid food allergens if identified (nuts, dairy, eggs, shellfish in susceptible individuals).
+
+---
+
+DISEASE: Bronchitis (Acute)
+SYMPTOMS: Persistent cough with mucus (clear, white, yellow, or green), chest soreness, shortness of breath, slight fever, fatigue.
+CAUSES: Mostly viral (same viruses as common cold). Bacterial less common. Smoking is major risk factor.
+DURATION: Cough may last 3 weeks even after infection clears.
+
+MEDICINES (Bronchitis):
+- Antibiotics NOT needed for acute viral bronchitis.
+- Guaifenesin (expectorant) – loosens mucus, helps cough it up.
+- Salbutamol inhaler – if wheezing present.
+- Paracetamol or Ibuprofen – for fever and discomfort.
+- Steam inhalation – helps loosen congestion.
+- Antibiotics (Azithromycin, Amoxicillin) – only if bacterial infection confirmed.
+
+DIET FOR BRONCHITIS:
+- Hot soups and broths (help loosen mucus).
+- Honey and ginger tea (soothes airways).
+- Turmeric milk.
+- Foods rich in Vitamin C.
+- Stay hydrated – thin out mucus.
+- Avoid: dairy (can thicken mucus), alcohol, smoking, cold drinks.
+
+
+================================================================
+SECTION 8: URINARY TRACT INFECTION (UTI)
+================================================================
+
+DISEASE: Urinary Tract Infection
+SYMPTOMS: Burning sensation during urination, frequent urge to urinate, passing small amounts, cloudy or strong-smelling urine, pelvic pain (in women), lower back or side pain (if kidney involved), blood in urine (hematuria), mild fever.
+CAUSES: Bacteria (usually E. coli) entering the urethra. More common in women. Risk factors: sexual activity, certain contraceptives, menopause, urinary tract abnormalities, catheter use.
+WHEN TO SEE A DOCTOR: High fever (>38.5°C), chills, nausea/vomiting, back/side pain (possible kidney infection), symptoms not improving after 2 days of antibiotics, recurrent UTIs.
+
+MEDICINES (UTI):
+- Nitrofurantoin 100mg twice daily for 5–7 days – common first-line for uncomplicated UTI.
+- Trimethoprim 200mg twice daily for 7 days.
+- Fosfomycin 3g single dose – convenient single-dose option.
+- Ciprofloxacin 500mg twice daily for 3–7 days – for complicated or recurrent UTI.
+- Phenazopyridine (Pyridium) 200mg three times daily – urinary analgesic, relieves burning (turns urine orange). Not an antibiotic.
+- Always complete the full antibiotic course.
+- Urine culture should be done to identify bacteria and sensitivity.
+
+DIET FOR UTI:
+- Drink 2–3 liters of water per day – flushes bacteria from urinary tract.
+- Cranberry juice – may prevent bacteria from adhering to bladder walls (use unsweetened).
+- Cranberry supplements as alternative to juice.
+- Probiotics: yogurt, kefir – maintain healthy bacteria.
+- Avoid: caffeine, alcohol, carbonated drinks, spicy foods, artificial sweeteners (irritate bladder).
+- Eat: garlic (antibacterial), blueberries, ginger, vitamin C foods (acidifies urine, inhibits bacterial growth).
+- Do not hold urine for long periods.
+- Urinate after sexual intercourse.
+- Wipe front to back (women).
+
+
+================================================================
+SECTION 9: SKIN CONDITIONS
+================================================================
+
+DISEASE: Acne / Pimples
+SYMPTOMS: Whiteheads, blackheads, papules, pustules, nodules, cysts. Usually on face, chest, back, shoulders.
+CAUSES: Excess sebum (oil) production, clogged pores, bacteria (C. acnes), inflammation, hormonal changes, stress, certain medications.
+WHEN TO SEE A DOCTOR: Severe nodular or cystic acne, acne causing scarring, no improvement after 2–3 months of treatment.
+
+MEDICINES (Acne):
+- Benzoyl peroxide 2.5–5% gel/cream – kills bacteria, reduces inflammation. Apply once/twice daily.
+- Salicylic acid 0.5–2% cleanser or gel – unclogs pores, reduces blackheads.
+- Clindamycin 1% topical gel – antibiotic, reduces bacteria.
+- Tretinoin 0.025–0.1% cream – retinoid, prevents clogged pores, increases cell turnover. Use at night.
+- Niacinamide 4–5% – reduces inflammation, oil control.
+- Doxycycline 100mg daily or Minocycline 100mg daily – oral antibiotics for moderate-severe acne (8–12 weeks).
+- Adapalene 0.1% gel (Differin) – retinoid, available OTC.
+- Severe acne: Isotretinoin (Accutane) – only under strict dermatologist supervision.
+
+DIET FOR ACNE:
+- Low glycemic diet – reduces insulin spikes that trigger acne.
+- Avoid: white bread, white rice, sugary drinks, sweets, chips, fast food.
+- Eat: whole grains, legumes, fruits, vegetables.
+- Reduce dairy intake – especially skim milk (linked to acne in studies).
+- Omega-3 fatty acids: fish, walnuts, flaxseeds – reduce inflammation.
+- Zinc-rich foods: pumpkin seeds, chickpeas, lentils, beef – supports skin healing.
+- Vitamin A: sweet potatoes, carrots, spinach – supports skin cell renewal.
+- Stay hydrated: 8 glasses of water daily.
+- Green tea – antioxidant, anti-inflammatory.
+- Avoid: oily/fried foods, excess chocolate, iodine-rich foods (seaweed, iodized salt in excess).
+- Probiotics: yogurt, kimchi – improve gut health, may reduce acne.
+
+---
+
+DISEASE: Eczema (Atopic Dermatitis)
+SYMPTOMS: Dry, itchy skin, red rash, skin thickening, oozing/crusting, more common in skin folds (elbows, behind knees), wrists, ankles, face.
+CAUSES: Genetic predisposition, overactive immune response, skin barrier deficiency. Triggers: soaps, detergents, stress, sweat, wool, dust mites, pollen.
+
+MEDICINES (Eczema):
+- Emollients/moisturizers – MOST important. Apply immediately after bathing. Use fragrance-free.
+- Hydrocortisone 1% cream – mild topical corticosteroid, for mild flares.
+- Betamethasone 0.1% cream – moderate-strong steroid, for moderate flares.
+- Tacrolimus 0.03–0.1% ointment – non-steroidal immunomodulator, good for face and sensitive areas.
+- Cetirizine 10mg or Loratadine 10mg – antihistamines, reduce itching.
+- Antibiotics if secondary bacterial infection (Flucloxacillin or Cephalexin).
+
+DIET FOR ECZEMA:
+- Common dietary triggers: cow's milk, eggs, wheat, soy, peanuts, tree nuts, fish (especially in children – keep food diary).
+- Anti-inflammatory foods: fatty fish (salmon, sardines), olive oil, leafy greens, broccoli.
+- Probiotic foods: yogurt, kefir, fermented foods (improve gut microbiome, may reduce eczema).
+- Vitamin D: sunlight, fortified foods, supplements (deficiency linked to eczema).
+- Avoid processed foods, artificial additives, trans fats.
+- Stay well-hydrated.
+
+
+================================================================
+SECTION 10: JOINT & MUSCLE PAIN
+================================================================
+
+DISEASE: Arthritis (Osteoarthritis)
+SYMPTOMS: Joint pain, stiffness (especially in morning), reduced range of motion, swelling, grating sensation. Common in knees, hips, hands, spine.
+CAUSES: Wear and tear of cartilage, aging, obesity, previous joint injury, overuse.
+
+MEDICINES (Osteoarthritis):
+- Paracetamol 500–1000mg up to 4x/day – first-line for mild-moderate pain.
+- Ibuprofen 400–600mg three times daily with food – NSAID, reduces pain and inflammation.
+- Diclofenac 50mg tablet or topical gel – NSAID, topical gel has fewer side effects.
+- Celecoxib 200mg – COX-2 inhibitor NSAID, fewer stomach side effects.
+- Glucosamine sulfate 1500mg + Chondroitin 1200mg daily – may slow cartilage breakdown (take 2–3 months to show effect).
+- Intra-articular corticosteroid injections – for flares (doctor administered).
+- Tramadol – for moderate-severe pain when other medicines fail.
+- Avoid prolonged NSAID use (risk of stomach ulcers, kidney issues).
+
+DIET FOR ARTHRITIS:
+- Anti-inflammatory diet: fatty fish, olive oil, nuts, seeds, fruits, vegetables.
+- Turmeric (curcumin) – powerful anti-inflammatory. Consume with black pepper for better absorption.
+- Ginger – anti-inflammatory properties.
+- Omega-3 rich foods: salmon, sardines, mackerel, walnuts, flaxseeds.
+- Vitamin D and Calcium for bone health: dairy or fortified foods, sunlight, eggs.
+- Collagen: bone broth, chicken skin, gelatin (supports cartilage).
+- Avoid: processed foods, red meat, fried foods, sugary drinks, alcohol (pro-inflammatory).
+- Maintain healthy weight (reduces pressure on joints).
+- Foods to include: berries (antioxidants), broccoli (Vitamin C, K), green tea, garlic, onions.
+
+---
+
+DISEASE: Back Pain (Lower Back)
+SYMPTOMS: Aching, stiffness, shooting pain from back to leg (sciatica), reduced flexibility.
+CAUSES: Muscle strain, poor posture, herniated disc, arthritis, osteoporosis, sedentary lifestyle.
+WHEN TO SEE A DOCTOR: Pain after trauma/fall, leg weakness or numbness, bladder/bowel problems with back pain, fever with back pain, severe unrelenting pain.
+
+MEDICINES (Back Pain):
+- Paracetamol 500–1000mg – first-line.
+- Ibuprofen 400mg or Naproxen 500mg – NSAIDs, more effective than paracetamol for back pain.
+- Diclofenac 50mg with food – effective NSAID.
+- Muscle relaxants: Cyclobenzaprine, Methocarbamol, Tizanidine – for muscle spasm (short-term only, cause drowsiness).
+- Topical diclofenac gel – apply to affected area.
+- Lidocaine patches – for localized pain.
+- Gabapentin or Pregabalin – if neuropathic pain component (sciatica).
+
+DIET FOR BACK PAIN:
+- Anti-inflammatory foods (same as arthritis diet).
+- Calcium and Vitamin D for bone density.
+- Vitamin K2: fermented foods, natto, certain cheeses (supports bone health).
+- Magnesium: leafy greens, nuts, seeds (muscle relaxation).
+- Collagen: bone broth, fish skin.
+- Avoid: sugar, trans fats, alcohol, tobacco (increase inflammation).
+- Stay hydrated (intervertebral discs are mostly water).
+
+
+================================================================
+SECTION 11: ANEMIA
+================================================================
+
+DISEASE: Iron Deficiency Anemia
+SYMPTOMS: Fatigue, weakness, pale skin, shortness of breath, dizziness, brittle nails, cold hands and feet, headache, pica (craving for ice, dirt, chalk).
+NORMAL HEMOGLOBIN: Men: 13.5–17.5 g/dL | Women: 12–15.5 g/dL
+CAUSES: Inadequate iron intake, poor iron absorption, blood loss (heavy periods, GI bleeding), increased demand (pregnancy).
+
+MEDICINES (Iron Deficiency Anemia):
+- Ferrous Sulfate 325mg (elemental iron 65mg) – most common. Take on empty stomach for better absorption. 1–3 times daily.
+- Ferrous Gluconate or Ferrous Fumarate – better tolerated alternatives.
+- Take with Vitamin C (orange juice) to improve absorption.
+- Avoid taking with calcium, antacids, tea, coffee (reduce absorption).
+- Iron injections or IV iron – if oral not tolerated or severe anemia.
+- B12 deficiency anemia: Methylcobalamin 500mcg or Cyanocobalamin injections.
+- Folate deficiency anemia: Folic acid 5mg daily.
+
+DIET FOR ANEMIA:
+- Iron-rich foods: red meat, chicken liver, oysters, beans, lentils, tofu, spinach, fortified cereals.
+- Heme iron (animal sources) absorbed 2–3x better than non-heme iron (plant sources).
+- Combine non-heme iron with Vitamin C to improve absorption: lemon on dal, tomatoes with spinach.
+- Vitamin C foods: citrus fruits, amla (highest Vitamin C), bell peppers, strawberries, guava.
+- Vitamin B12: meat, fish, dairy, eggs, fortified foods (vegans need supplements).
+- Folate: dark leafy vegetables, legumes, avocado, asparagus, eggs.
+- Iron absorption inhibitors (consume separately from iron-rich meals): tea, coffee, calcium-rich foods, phytates (whole grains, nuts).
+- Cook in cast iron cookware – increases iron content of food.
+- For vegetarians: rely on lentils (masoor dal, chana dal), rajma, chickpeas, soy, dark leafy vegetables, jaggery (gud), sesame seeds, pumpkin seeds.
+- Include dates, raisins, dried apricots for iron.
+
+
+================================================================
+SECTION 12: THYROID DISORDERS
+================================================================
+
+DISEASE: Hypothyroidism (Underactive Thyroid)
+SYMPTOMS: Fatigue, weight gain, cold intolerance, constipation, dry skin, hair thinning, depression, slow heart rate, puffy face.
+CAUSES: Hashimoto's thyroiditis, radioactive iodine treatment, thyroid surgery, iodine deficiency.
+DIAGNOSIS: TSH elevated, T4 low.
+
+MEDICINES (Hypothyroidism):
+- Levothyroxine (L-thyroxine) – synthetic T4, take on empty stomach 30–60 min before breakfast. Start low, titrate based on TSH.
+- Dose adjusted based on TSH levels (checked every 6–8 weeks initially, then annually).
+- Do not take within 4 hours of calcium, iron supplements, antacids, or certain foods.
+- Never stop without doctor advice.
+
+DIET FOR HYPOTHYROIDISM:
+- Selenium-rich foods: Brazil nuts (1–2/day), tuna, sardines, eggs (supports thyroid function).
+- Iodine: iodized salt (moderate), seaweed, fish, dairy.
+- Zinc: beef, pumpkin seeds, chickpeas (supports thyroid hormone production).
+- Avoid large amounts of raw cruciferous vegetables (broccoli, cabbage, cauliflower, kale) – contain goitrogens that interfere with thyroid (cooking deactivates goitrogens).
+- Avoid soy in large amounts (interferes with levothyroxine absorption).
+- Gluten: some Hashimoto's patients benefit from gluten reduction.
+- Take levothyroxine 4 hours away from high-fiber foods or high-calcium foods.
+- Anti-inflammatory diet is beneficial.
+
+---
+
+DISEASE: Hyperthyroidism (Overactive Thyroid)
+SYMPTOMS: Weight loss, rapid heart rate, anxiety, tremors, heat intolerance, excessive sweating, frequent bowel movements, fatigue, goiter.
+CAUSES: Graves' disease, toxic nodular goiter, thyroiditis, excess iodine.
+DIAGNOSIS: TSH suppressed, T3/T4 elevated.
+
+MEDICINES (Hyperthyroidism):
+- Methimazole – antithyroid drug, reduces thyroid hormone production. First-line.
+- Propylthiouracil (PTU) – alternative, preferred in pregnancy first trimester.
+- Propranolol or Atenolol – beta-blockers, control heart rate and symptoms while awaiting antithyroid effect.
+- Radioactive iodine (I-131) – definitive treatment.
+- Surgery (thyroidectomy) – for large goiter or those who cannot take medications.
+
+DIET FOR HYPERTHYROIDISM:
+- Reduce iodine intake: avoid seaweed, iodized salt, seafood, dairy in excess.
+- Cruciferous vegetables (broccoli, cabbage, Brussels sprouts) – BENEFICIAL here (goitrogenic effect reduces thyroid activity).
+- Calcium and Vitamin D: hyperthyroidism causes bone loss – include dairy, fortified foods.
+- Anti-inflammatory foods.
+- Avoid: caffeine (worsens heart palpitations and anxiety), alcohol.
+- Eat high-calorie, nutrient-dense foods if losing weight.
+
+
+================================================================
+SECTION 13: COMMON INFECTIONS
+================================================================
+
+DISEASE: Tonsillitis
+SYMPTOMS: Sore throat, swollen tonsils (sometimes with white or yellow patches), painful swallowing, fever, swollen neck lymph nodes, bad breath, headache.
+CAUSES: Viral (most common – adenovirus, EBV) or bacterial (Group A Streptococcus).
+
+MEDICINES (Tonsillitis):
+- Paracetamol or Ibuprofen – for pain and fever.
+- Benzydamine gargle or lozenges – local pain relief.
+- Antibiotics (if bacterial strep confirmed): Amoxicillin 500mg three times daily for 10 days OR Penicillin V 500mg twice daily.
+- Penicillin allergy: Azithromycin 500mg for 3 days or Erythromycin.
+- DO NOT give Ampicillin/Amoxicillin if infectious mononucleosis (EBV) suspected – can cause rash.
+
+DIET FOR TONSILLITIS:
+- Cold foods soothe pain: ice cream, popsicles, cold water, cold smoothies.
+- Soft, easy-to-swallow foods: yogurt, applesauce, mashed potatoes, porridge, soups.
+- Warm salt water gargling.
+- Honey and warm water.
+- Avoid: hard, crunchy, or scratchy foods (chips, crackers, toast) that irritate throat.
+- Stay hydrated.
+
+---
+
+DISEASE: Ear Infection (Otitis Media)
+SYMPTOMS: Ear pain (especially in children), tugging at ear, difficulty hearing, fluid draining from ear, fever, irritability in infants.
+CAUSES: Bacterial (S. pneumoniae, H. influenzae) or viral. Often follows common cold.
+
+MEDICINES (Ear Infection):
+- Paracetamol or Ibuprofen – for pain and fever.
+- Warm compress over ear – pain relief.
+- Antibiotics (if needed – often resolves on own): Amoxicillin 500mg three times daily for 5–7 days.
+- Ear drops: only if eardrum not perforated.
+- Decongestants: may help if associated with congestion.
+
+---
+
+DISEASE: Conjunctivitis (Pink Eye)
+SYMPTOMS: Red/pink eye, discharge (watery in viral, thick yellow/green in bacterial), crusty eyelids, itching, burning, light sensitivity.
+CAUSES: Viral (most common), bacterial, allergic.
+
+MEDICINES (Conjunctivitis):
+- Viral: self-limiting 7–14 days. Cool compresses. Artificial tears for comfort.
+- Bacterial: Chloramphenicol 0.5% eye drops every 2 hours for 2 days then 4x/day, OR Tobramycin drops, OR Ciprofloxacin drops.
+- Allergic: Sodium cromoglicate eye drops or Olopatadine drops + oral antihistamine (Cetirizine 10mg).
+- Very contagious – frequent hand washing, don't share towels.
+
+
+================================================================
+SECTION 14: ANXIETY & SLEEP ISSUES
+================================================================
+
+DISEASE: Anxiety & Stress
+SYMPTOMS: Excessive worry, restlessness, fatigue, difficulty concentrating, irritability, muscle tension, sleep disturbances, rapid heartbeat.
+
+MEDICINES (Anxiety):
+- FIRST-LINE (long-term): SSRIs – Sertraline 50mg, Escitalopram 10mg (take 4–6 weeks for full effect).
+- Short-term: Lorazepam or Diazepam – only for acute severe anxiety (short-term, risk of dependence).
+- Buspirone 10mg – non-benzodiazepine anti-anxiety (2–4 weeks onset).
+- Propranolol 10–40mg – for performance anxiety (situational).
+- Always combine with therapy (CBT is most effective).
+
+DIET FOR ANXIETY:
+- Magnesium-rich foods: dark chocolate, nuts, seeds, leafy greens, avocado (calming effect on nervous system).
+- Omega-3 fatty acids: fatty fish, walnuts, flaxseeds (reduce brain inflammation).
+- Complex carbohydrates: oats, whole grain bread, brown rice (stabilize blood sugar, boost serotonin).
+- Tryptophan: turkey, chicken, milk, cheese, eggs, nuts (precursor to serotonin).
+- Probiotic foods: yogurt, kefir, kimchi (gut-brain connection).
+- Ashwagandha supplement – adaptogen, proven to reduce cortisol.
+- Chamomile tea – calming effect.
+- Green tea (L-theanine) – promotes calm alertness.
+- Avoid: caffeine (worsens anxiety), alcohol (disrupts GABA), sugar and refined carbs, processed foods.
+- Limit: energy drinks, cola, strong tea/coffee.
+
+---
+
+DISEASE: Insomnia (Sleep Disorders)
+SYMPTOMS: Difficulty falling asleep, difficulty staying asleep, waking too early, not feeling rested, daytime fatigue.
+
+MEDICINES (Insomnia):
+- Melatonin 0.5–5mg – taken 30–60 min before desired sleep time. Non-habit forming. Start with lowest dose.
+- Diphenhydramine (Benadryl) – OTC antihistamine sleep aid. Short-term use only.
+- Doxylamine succinate – OTC sleep aid.
+- Prescription (doctor required): Zolpidem 5–10mg, Eszopiclone, Temazepam, Trazodone.
+- Cognitive Behavioral Therapy for Insomnia (CBT-I) – MOST effective long-term treatment.
+
+DIET FOR SLEEP:
+- Tryptophan foods before bed: warm milk, turkey, banana, nuts.
+- Melatonin containing foods: cherries (especially tart cherry juice), grapes, tomatoes.
+- Magnesium: promotes sleep onset – pumpkin seeds, almonds, spinach.
+- Avoid caffeine after 2pm.
+- Avoid alcohol (disrupts sleep architecture).
+- Avoid heavy meals within 3 hours of bedtime.
+- Avoid large fluid intake before bed (reduces nighttime urination).
+- Chamomile tea before bedtime.
+- Valerian root tea – may improve sleep quality.
+- Keep consistent sleep schedule.
+- Reduce screen (blue light) exposure 1 hour before bed.
+
+
+================================================================
+SECTION 15: WOMEN'S HEALTH
+================================================================
+
+DISEASE: Dysmenorrhea (Painful Periods)
+SYMPTOMS: Cramping pain in lower abdomen before and during periods, lower back pain, nausea, vomiting, diarrhea, headache, fatigue.
+
+MEDICINES (Dysmenorrhea):
+- Ibuprofen 400–600mg every 6–8 hours – most effective NSAID for period pain. Start at onset of bleeding or day before.
+- Naproxen 500mg twice daily.
+- Mefenamic acid 500mg three times daily – especially effective for dysmenorrhea.
+- Paracetamol – if NSAIDs not tolerated.
+- Combined oral contraceptive pill – reduces pain significantly (if contraception also desired).
+- Antispasmodic: Dicyclomine or Hyoscine – for cramping.
+- Heat pad on lower abdomen – very effective non-drug relief.
+
+DIET FOR PERIOD PAIN:
+- Magnesium: spinach, pumpkin seeds, dark chocolate (reduces cramping).
+- Omega-3 fatty acids: salmon, walnuts, flaxseeds (anti-inflammatory).
+- Vitamin D: sunlight, eggs, fortified foods (deficiency linked to more pain).
+- Ginger tea – anti-inflammatory, reduces prostaglandins.
+- Avoid: salt (reduces bloating), caffeine (vasoconstriction), alcohol, sugar, red meat (increases prostaglandins).
+- Hydration: warm water, herbal teas.
+- Anti-inflammatory foods generally helpful.
+
+---
+
+DISEASE: Polycystic Ovary Syndrome (PCOS)
+SYMPTOMS: Irregular or absent periods, excess facial/body hair, acne, scalp hair thinning, weight gain, difficulty getting pregnant, darkening skin in body folds.
+
+MEDICINES (PCOS):
+- Metformin 500–1500mg – improves insulin resistance, regularizes periods.
+- Combined oral contraceptive pills – regulate periods, reduce androgens, manage acne/hirsutism.
+- Spironolactone 50–100mg – reduces excess hair and acne (anti-androgen).
+- Clomifene – if trying to conceive (induces ovulation).
+- Inositol supplements (myo-inositol + D-chiro-inositol) – improves insulin sensitivity and ovarian function.
+
+DIET FOR PCOS:
+- Low glycemic index diet – most important. Reduces insulin resistance.
+- High fiber: vegetables, whole grains, legumes.
+- Lean proteins: fish, chicken, legumes, tofu.
+- Healthy fats: avocado, nuts, olive oil, fatty fish.
+- Avoid: white bread, white rice, sweets, sugary drinks, processed foods, trans fats.
+- Anti-inflammatory foods: berries, fatty fish, leafy greens, turmeric.
+- Inositol-rich foods: citrus fruits, whole grains, legumes.
+- Spearmint tea – may reduce androgen levels.
+- Exercise: 30 min daily, combination of cardio and strength training.
+- Maintain healthy weight (even 5–10% weight loss significantly improves PCOS).
+
+
+================================================================
+SECTION 16: CHILDREN'S HEALTH
+================================================================
+
+DISEASE: Childhood Fever
+FEVER THRESHOLDS IN CHILDREN:
+- Newborn (<3 months): any fever ≥38°C (100.4°F) is emergency – go to hospital immediately.
+- 3–6 months: ≥38°C with illness, consult doctor.
+- 6 months–2 years: ≥38.9°C (102°F) lasting more than day, consult doctor.
+- >2 years: fever ≥39.4°C (103°F) or lasting >3 days.
+
+MEDICINES (Childhood Fever):
+- Paracetamol (Acetaminophen) syrup: 10–15mg/kg every 4–6 hours. Weight-based dosing.
+- Ibuprofen syrup: 5–10mg/kg every 6–8 hours. Not for children under 6 months.
+- Do not use Aspirin in children under 18.
+- Tepid sponging – lukewarm water on forehead and body.
+- ORS to prevent dehydration.
+- Antibiotics only if bacterial infection confirmed by doctor.
+
+DIET FOR SICK CHILDREN:
+- Breast milk continues for infants – best nutrition and immunity.
+- Encourage fluids: water, ORS, diluted fruit juices, clear soups.
+- Continue normal diet if child wants to eat.
+- BRAT diet for diarrhea: bananas, rice, applesauce, toast.
+- Do not force-feed.
+- Cold treats (popsicles, ice cream) for sore throat.
+- Soft, warm foods: porridge, khichdi, soups.
+
+---
+
+DISEASE: Teething (Infants)
+SYMPTOMS: Drooling, chewing on objects, gum swelling, irritability, slight temperature rise (not true fever).
+MEDICINES:
+- Cold teething ring.
+- Rubbing gums gently with clean finger.
+- Paracetamol if genuinely uncomfortable.
+- Avoid teething gels with benzocaine (not recommended for infants).
+
+---
+
+DISEASE: Colic (Infant Crying)
+SYMPTOMS: Intense crying for more than 3 hours/day, 3+ days/week in babies under 3 months.
+MANAGEMENT:
+- Simethicone drops – gas drops, helps with gas-related discomfort.
+- Probiotic drops (Lactobacillus reuteri) – shown to reduce crying time in breastfed infants.
+- Gentle abdominal massage.
+- Winding/burping after feeds.
+- Fennel seed tea (gripe water) – used traditionally, consult doctor first.
+
+
+================================================================
+SECTION 17: NUTRITION & GENERAL HEALTH
+================================================================
+
+DAILY NUTRITIONAL REQUIREMENTS (Adult):
+- Calories: 2000–2500 kcal/day (varies with age, sex, activity level)
+- Protein: 0.8g per kg body weight (56g/day men, 46g/day women)
+- Carbohydrates: 225–325g/day (45–65% of calories)
+- Fat: 44–77g/day (20–35% of calories), limit saturated fat
+- Fiber: 25g/day (women), 38g/day (men)
+- Water: 2–3 liters/day
+- Sodium: <2300mg/day
+- Sugar: <50g/day (added sugars <25g/day)
+
+KEY VITAMINS & MINERALS:
+- Vitamin A: liver, eggs, dairy, orange/yellow vegetables, leafy greens. For vision, immune function.
+- Vitamin B1 (Thiamine): whole grains, legumes. For energy metabolism, nerve function.
+- Vitamin B6: poultry, fish, potatoes, bananas. For protein metabolism, brain function.
+- Vitamin B12: meat, fish, dairy, eggs. For nerve function, red blood cells. Vegans need supplements.
+- Vitamin C: citrus, bell peppers, broccoli, amla. Antioxidant, immune support, collagen synthesis.
+- Vitamin D: sunlight, fatty fish, egg yolks, fortified foods. Bone health, immune function. 600-800 IU/day.
+- Vitamin E: nuts, seeds, vegetable oils, leafy greens. Antioxidant.
+- Vitamin K: leafy greens, fermented foods. Blood clotting, bone health.
+- Calcium: dairy, fortified plant milk, tofu, kale. Bone and teeth health. 1000mg/day adults.
+- Iron: red meat, legumes, fortified cereals. Oxygen transport.
+- Magnesium: nuts, seeds, whole grains, leafy greens. Muscle function, energy.
+- Zinc: meat, shellfish, legumes, nuts, seeds. Immune function, wound healing.
+- Potassium: bananas, potatoes, leafy greens, legumes. Heart health, blood pressure.
+- Iodine: iodized salt, seafood, dairy. Thyroid function.
+- Selenium: Brazil nuts, tuna, eggs. Thyroid function, antioxidant.
+
+SUPERFOODS:
+- Amla (Indian gooseberry): highest natural Vitamin C source, antioxidant, liver protective.
+- Turmeric (Curcumin): anti-inflammatory, antioxidant. Use with black pepper for best absorption.
+- Ginger: digestive aid, anti-nausea, anti-inflammatory.
+- Garlic: antibacterial, antiviral, lowers blood pressure and cholesterol.
+- Flaxseeds: omega-3, fiber, lignans. Grind before use for best absorption.
+- Chia seeds: omega-3, fiber, calcium, protein.
+- Moringa (drumstick leaves): extremely nutrient-dense – high in iron, calcium, Vitamin C.
+- Ashwagandha: adaptogen, reduces stress, improves energy and stamina.
+- Tulsi (Holy Basil): antimicrobial, anti-inflammatory, stress relief, immune support.
+
+HYDRATION GUIDE:
+- 8 glasses (2 liters) minimum water per day.
+- More if: exercising, hot weather, fever, diarrhea, vomiting, breastfeeding.
+- Signs of dehydration: dark yellow urine, dry mouth, dizziness, fatigue.
+- Best hydrating foods: cucumber (96% water), watermelon (92%), oranges, strawberries.
+- Electrolytes lost in sweat: sodium, potassium, magnesium, chloride. Replenish with coconut water or ORS.
+
+FOODS TO ALWAYS LIMIT/AVOID:
+- Trans fats: vanaspati, margarine, commercially fried foods, packaged biscuits, cakes.
+- Added sugars: soft drinks, packaged juices, sweets, candy, cookies.
+- Excess sodium: pickles, papads, processed meats, instant noodles, canned soups.
+- Refined carbs: maida products, white bread, white rice (in excess).
+- Processed meats: sausages, hot dogs, bacon (linked to cancer and heart disease).
+- Alcohol: liver damage, cancer risk, addictive, disrupts sleep and nutrition.
+- Ultra-processed foods: chips, instant meals, packaged snacks.
+
+
+================================================================
+SECTION 18: PREVENTIVE HEALTH & VACCINES
+================================================================
+
+ADULT VACCINES (Recommended):
+- Influenza vaccine: annually.
+- COVID-19: as per updated guidelines.
+- Tdap (Tetanus, Diphtheria, Pertussis): booster every 10 years.
+- Hepatitis B: 3-dose series if not vaccinated.
+- Hepatitis A: 2-dose series (travel to endemic areas).
+- MMR (Measles, Mumps, Rubella): if not immune.
+- Varicella (Chickenpox): if no history of disease or vaccination.
+- HPV vaccine: up to age 26 (and age 27–45 with shared decision-making).
+- Pneumococcal vaccine: age 65+, or younger if high-risk.
+- Meningococcal vaccine: high-risk groups.
+
+HEALTH SCREENINGS:
+- Blood pressure: every 1–2 years starting at 18.
+- Cholesterol: every 4–6 years starting at 20 (more often if at risk).
+- Blood glucose: every 3 years starting at 35, or earlier if overweight.
+- Pap smear (women): every 3 years ages 21–65.
+- Mammogram (women): every 1–2 years starting at 40–50 (varies by guidelines).
+- Colorectal cancer screening: starting at age 45.
+- Eye exam: every 1–2 years.
+- Dental checkup: every 6 months.
+- Skin check: annually or when new moles appear.
+
+LIFESTYLE RECOMMENDATIONS:
+- Exercise: 150 min/week moderate aerobic activity + 2 days strength training.
+- Sleep: 7–9 hours per night (adults), 8–10 hours (teens), 10–13 hours (school-age children).
+- No smoking – most preventable cause of disease and death.
+- Limit alcohol: max 1–2 drinks/day.
+- Maintain healthy BMI: 18.5–24.9.
+- Mental health: manage stress, maintain social connections, seek help when needed.
+- Regular sunscreen use: SPF 30+ daily (reduces skin cancer, premature aging).
+- Hand hygiene: wash hands for 20 seconds, especially before eating and after toilet.
+
+
+================================================================
+SECTION 19: EMERGENCY SIGNS (SEEK IMMEDIATE MEDICAL ATTENTION)
+================================================================
+
+CHEST PAIN – Could be heart attack: tightness, pressure, squeezing in chest, spreading to arm/jaw/back. CALL EMERGENCY.
+STROKE SIGNS (FAST): Face drooping, Arm weakness, Speech difficulty, Time to call emergency.
+SEVERE ALLERGIC REACTION (Anaphylaxis): throat swelling, difficulty breathing, hives, drop in BP after exposure to allergen. Use EpiPen if available. CALL EMERGENCY.
+DIFFICULTY BREATHING: rapid or labored breathing, blue lips or fingertips.
+HIGH FEVER IN NEWBORN: any fever in baby <3 months. EMERGENCY.
+DIABETIC CRISIS: severe hypoglycemia (unconscious, unable to swallow) or diabetic ketoacidosis (high glucose, vomiting, fruity breath).
+SEVERE HEAD INJURY: loss of consciousness, confusion, vomiting after head trauma.
+SEIZURES: first-time seizure, prolonged seizure (>5 min), injury during seizure.
+UNCONTROLLED BLEEDING.
+SUICIDAL THOUGHTS: Take seriously – contact mental health helpline or emergency services.
+SIGNS OF MENINGITIS: severe headache + stiff neck + high fever + sensitivity to light + rash.
+
+================================================================
+NOTE TO CHATBOT:
+This knowledge base is for general health information only. Always include disclaimer to consult a licensed healthcare provider. Do not diagnose. Do not recommend prescription medicines without professional evaluation. Provide emergency guidance when red flag symptoms are identified.
+================================================================

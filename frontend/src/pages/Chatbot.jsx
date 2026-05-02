@@ -5,7 +5,7 @@ import axios from 'axios';
 
 const Chatbot = () => {
   const [messages, setMessages] = useState([
-    { text: "Hello! I am your AI Health Assistant placeholder. How can I help you today?", isBot: true }
+    { text: "Hello! I am your AI Health Assistant. How can I help you today?", isBot: true }
   ]);
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
@@ -24,7 +24,8 @@ const Chatbot = () => {
     if (!input.trim()) return;
 
     const userMsg = input.trim();
-    setMessages(prev => [...prev, { text: userMsg, isBot: false }]);
+    const newMessages = [...messages, { text: userMsg, isBot: false }];
+    setMessages(newMessages);
     setInput('');
     setLoading(true);
 
@@ -32,7 +33,7 @@ const Chatbot = () => {
       const token = localStorage.getItem('token');
       const res = await axios.post(
         'http://localhost:5000/api/chatbot',
-        { message: userMsg },
+        { message: userMsg, messages: newMessages },
         { headers: { Authorization: `Bearer ${token}` } }
       );
       
@@ -54,8 +55,8 @@ const Chatbot = () => {
           {/* Header */}
           <div className="bg-healthcare-600 text-white p-4 flex items-center space-x-3">
             <Activity className="h-6 w-6" />
-            <span className="font-semibold text-lg">SmartHealth AI Placeholder</span>
-            <span className="text-xs bg-healthcare-500 border border-healthcare-400 font-medium px-2 py-1 rounded ml-auto tracking-wide">MOCK MODE</span>
+            <span className="font-semibold text-lg">SmartHealth AI Assistant</span>
+            <span className="text-xs bg-healthcare-500 border border-healthcare-400 font-medium px-2 py-1 rounded ml-auto tracking-wide">RAG ACTIVATED</span>
           </div>
 
           {/* Chat Area */}
@@ -88,9 +89,9 @@ const Chatbot = () => {
             <div ref={messagesEndRef} />
           </div>
 
-          {/* Call to action notice */}
-          <div className="bg-blue-50 text-blue-700 text-xs px-4 py-2 border-t border-b border-blue-100 flex justify-center uppercase tracking-wide font-semibold">
-            // TODO: Replace this Logic with Python AI Model
+          {/* Information notice */}
+          <div className="bg-blue-50 text-blue-700 text-xs px-4 py-2 border-t border-b border-blue-100 flex justify-center uppercase tracking-wide font-semibold text-center">
+            Information provided by AI. Always consult a licensed doctor before taking medication.
           </div>
 
           {/* Input Area */}
