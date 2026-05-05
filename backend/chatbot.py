@@ -3,11 +3,15 @@ import os
 import json
 import time
 import sys
+from flask import Flask, request, jsonify
 
-# Redirect stdout to stderr to prevent print statements from corrupting JSON output when used as an API
-if __name__ == "__main__":
-    original_stdout = sys.stdout
-    sys.stdout = sys.stderr
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass
+
+app = Flask(__name__)
 # import gradio as gr
 
 from langchain_community.embeddings import HuggingFaceEmbeddings
@@ -34,9 +38,7 @@ else:
 
 if not api_key:
     if __name__ == "__main__":
-        sys.stdout = original_stdout
-        print(json.dumps({"error": "MISTRAL_API_KEY is not set in the environment variables."}))
-    import sys
+        print("Error: MISTRAL_API_KEY is not set in the environment variables. Please check your .env file.")
     sys.exit(1)
 
 print("API key loaded successfully")
@@ -373,40 +375,38 @@ def create_demo():
 #     except Exception as e:
 #         return f"An error occurred: {str(e)}. Please try a different question."
 
-if __name__ == "__main__":
+@app.route('/chatbot', methods=['POST'])
+def chat():
     try:
-        input_data = sys.stdin.read()
-        if input_data:
-            data = json.loads(input_data)
-            messages = data.get("messages", [])
-            if not messages:
-                user_msg = data.get("message", "")
-                if user_msg:
-                    messages = [{"role": "user", "text": user_msg, "isBot": False}]
-            
-            # Convert frontend messages format to Langchain MessagesState format
-            formatted_messages = []
-            for m in messages:
-                role = "assistant" if m.get("isBot") else "user"
-                content = m.get("text", "")
-                formatted_messages.append({"role": role, "content": content})
-            
-            session_id = data.get("session_id", f"session-{hash(str(time.time()))}")
-            
-            config = {"configurable": {"thread_id": session_id}}
-            result = graph.invoke({"messages": formatted_messages}, config=config)
-            
-            response_text = ""
-            for msg in reversed(result["messages"]):
-                if msg.type == "ai":
-                    response_text = msg.content
-                    break
-            
-            sys.stdout = original_stdout
-            print(json.dumps({"reply": response_text}))
-        else:
-            sys.stdout = original_stdout
-            print(json.dumps({"error": "No input provided"}))
+        data = request.json
+        messages = data.get("messages", [])
+        if not messages:
+            user_msg = data.get("message", "")
+            if user_msg:
+                messages = [{"role": "user", "text": user_msg, "isBot": False}]
+        
+        # Convert frontend messages format to Langchain MessagesState format
+        formatted_messages = []
+        for m in messages:
+            role = "assistant" if m.get("isBot") else "user"
+            content = m.get("text", "")
+            formatted_messages.append({"role": role, "content": content})
+        
+        session_id = data.get("session_id", f"session-{hash(str(time.time()))}")
+        
+        config = {"configurable": {"thread_id": session_id}}
+        result = graph.invoke({"messages": formatted_messages}, config=config)
+        
+        response_text = ""
+        for msg in reversed(result["messages"]):
+            if msg.type == "ai":
+                response_text = msg.content
+                break
+        
+        return jsonify({"reply": response_text})
     except Exception as e:
-        sys.stdout = original_stdout
-        print(json.dumps({"error": str(e)}))
+        return jsonify({"error": str(e)}), 500
+
+if __name__ == "__main__":
+    print("Starting Chatbot Flask server on port 5001...")
+    app.run(port=5001, debug=False)

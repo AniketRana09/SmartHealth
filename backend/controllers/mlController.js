@@ -233,45 +233,45 @@ const analyzeRisk = async (req, res) => {
 // @access  Private
 const chatbotResponse = async (req, res) => {
     try {
-        const inputData = JSON.stringify(req.body);
-        const scriptPath = path.join(__dirname, '..', 'chatbot.py');
-        const pythonProcess = spawn('python', [scriptPath]);
-
-        let resultData = '';
-        let errorData = '';
-
-        pythonProcess.stdout.on('data', (data) => {
-            resultData += data.toString();
-        });
-
-        pythonProcess.stderr.on('data', (data) => {
-            errorData += data.toString();
-        });
-
-        pythonProcess.on('close', (code) => {
-            if (code !== 0) {
-                console.error(`chatbot.py exited with code ${code}: ${errorData}`);
-                return res.status(500).json({ success: false, message: 'Error running chatbot AI', error: errorData });
+        const http = require('http');
+        const postData = JSON.stringify(req.body);
+        const options = {
+            hostname: '127.0.0.1',
+            port: 5001,
+            path: '/chatbot',
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Content-Length': Buffer.byteLength(postData)
             }
+        };
 
-            try {
-                const jsonStr = resultData.substring(resultData.indexOf('{'), resultData.lastIndexOf('}') + 1);
-                if (!jsonStr) {
-                    throw new Error("No JSON found in python output");
+        const request = http.request(options, (response) => {
+            let data = '';
+            response.on('data', (chunk) => {
+                data += chunk;
+            });
+            response.on('end', () => {
+                if (response.statusCode === 200) {
+                    try {
+                        const json = JSON.parse(data);
+                        res.status(200).json({ success: true, data: json });
+                    } catch (e) {
+                        res.status(500).json({ success: false, message: 'Invalid JSON from Python server', error: data });
+                    }
+                } else {
+                    res.status(response.statusCode).json({ success: false, message: 'Python server error', error: data });
                 }
-                const resultJson = JSON.parse(jsonStr);
-                if (resultJson.error) {
-                    return res.status(500).json({ success: false, message: 'Chatbot Error', error: resultJson.error });
-                }
-                res.status(200).json({ success: true, data: resultJson });
-            } catch (err) {
-                console.error('Failed to parse chatbot output:', resultData);
-                res.status(500).json({ success: false, message: 'Invalid chatbot output', error: err.message, raw: resultData });
-            }
+            });
         });
 
-        pythonProcess.stdin.write(inputData);
-        pythonProcess.stdin.end();
+        request.on('error', (e) => {
+            console.error(`Problem with request: ${e.message}`);
+            res.status(500).json({ success: false, message: 'Could not connect to Python chatbot server (is it running on port 5001?)', error: e.message });
+        });
+
+        request.write(postData);
+        request.end();
 
     } catch (error) {
         res.status(500).json({ message: 'Server Error', error: error.message });
