@@ -1,5 +1,7 @@
 const { spawn } = require('child_process');
 const path = require('path');
+const PredictionHistory = require('../models/PredictionHistory');
+const ChatHistory = require('../models/ChatHistory');
 
 // @desc    Predict Diabetes Risk (Actual ML Model)
 // @route   POST /api/predict
@@ -25,7 +27,7 @@ const predictDisease = async (req, res) => {
             errorData += data.toString();
         });
 
-        pythonProcess.on('close', (code) => {
+        pythonProcess.on('close', async (code) => {
             if (code !== 0) {
                 console.error(`Python script exited with code ${code}: ${errorData}`);
                 return res.status(500).json({ success: false, message: 'Error running prediction model', error: errorData });
@@ -38,6 +40,18 @@ const predictDisease = async (req, res) => {
                 if (resultJson.error) {
                     return res.status(500).json({ success: false, message: 'Model Error', error: resultJson.error });
                 }
+
+                if (req.user) {
+                    try {
+                        await PredictionHistory.create({
+                            user: req.user.id,
+                            type: 'Diabetes Risk',
+                            inputData: req.body,
+                            resultData: resultJson
+                        });
+                    } catch (err) { console.error('Error saving history', err); }
+                }
+
                 res.status(200).json({ success: true, data: resultJson });
             } catch (err) {
                 console.error("Failed to parse python script output:", resultData);
@@ -74,7 +88,7 @@ const predictGeneral = async (req, res) => {
             errorData += data.toString();
         });
 
-        pythonProcess.on('close', (code) => {
+        pythonProcess.on('close', async (code) => {
             if (code !== 0) {
                 console.error(`Python script exited with code ${code}: ${errorData}`);
                 return res.status(500).json({ success: false, message: 'Error running prediction model', error: errorData });
@@ -85,6 +99,18 @@ const predictGeneral = async (req, res) => {
                 if (resultJson.error) {
                     return res.status(500).json({ success: false, message: 'Model Error', error: resultJson.error });
                 }
+
+                if (req.user) {
+                    try {
+                        await PredictionHistory.create({
+                            user: req.user.id,
+                            type: 'General Disease',
+                            inputData: req.body,
+                            resultData: resultJson
+                        });
+                    } catch (err) { console.error('Error saving history', err); }
+                }
+
                 res.status(200).json({ success: true, data: resultJson });
             } catch (err) {
                 console.error("Failed to parse python script output:", resultData);
@@ -201,7 +227,7 @@ const analyzeRisk = async (req, res) => {
             errorData += data.toString();
         });
 
-        pythonProcess.on('close', (code) => {
+        pythonProcess.on('close', async (code) => {
             if (code !== 0) {
                 console.error(`predict_risk.py exited with code ${code}: ${errorData}`);
                 return res.status(500).json({ success: false, message: 'Error running risk analysis model', error: errorData });
@@ -213,6 +239,18 @@ const analyzeRisk = async (req, res) => {
                 if (resultJson.error) {
                     return res.status(500).json({ success: false, message: 'Model Error', error: resultJson.error, trace: resultJson.trace });
                 }
+
+                if (req.user) {
+                    try {
+                        await PredictionHistory.create({
+                            user: req.user.id,
+                            type: 'Risk Analysis',
+                            inputData: req.body,
+                            resultData: resultJson
+                        });
+                    } catch (err) { console.error('Error saving history', err); }
+                }
+
                 res.status(200).json({ success: true, data: resultJson });
             } catch (err) {
                 console.error('Failed to parse risk prediction output:', resultData);
@@ -228,11 +266,39 @@ const analyzeRisk = async (req, res) => {
     }
 };
 
+// @desc    Get Chatbot History
+// @route   GET /api/chatbot/history
+// @access  Private
+const getChatHistory = async (req, res) => {
+    try {
+        const history = await ChatHistory.findOne({ user: req.user.id });
+        if (history) {
+            res.status(200).json({ success: true, data: history.messages });
+        } else {
+            res.status(200).json({ success: true, data: [] });
+        }
+    } catch (error) {
+        res.status(500).json({ success: false, message: 'Server Error', error: error.message });
+    }
+};
+
 // @desc    Chatbot Response via RAG
 // @route   POST /api/chatbot
 // @access  Private
 const chatbotResponse = async (req, res) => {
     try {
+        const userMsg = req.body.message;
+        
+        // Save user message to DB
+        if (req.user && userMsg) {
+            let history = await ChatHistory.findOne({ user: req.user.id });
+            if (!history) {
+                history = await ChatHistory.create({ user: req.user.id, messages: [] });
+            }
+            history.messages.push({ text: userMsg, isBot: false });
+            await history.save();
+        }
+
         const http = require('http');
         const postData = JSON.stringify(req.body);
         const options = {
@@ -251,10 +317,20 @@ const chatbotResponse = async (req, res) => {
             response.on('data', (chunk) => {
                 data += chunk;
             });
-            response.on('end', () => {
+            response.on('end', async () => {
                 if (response.statusCode === 200) {
                     try {
                         const json = JSON.parse(data);
+                        
+                        // Save bot message to DB
+                        if (req.user && json.reply) {
+                            const history = await ChatHistory.findOne({ user: req.user.id });
+                            if (history) {
+                                history.messages.push({ text: json.reply, isBot: true });
+                                await history.save();
+                            }
+                        }
+                        
                         res.status(200).json({ success: true, data: json });
                     } catch (e) {
                         res.status(500).json({ success: false, message: 'Invalid JSON from Python server', error: data });
@@ -338,7 +414,7 @@ const predictHeart = async (req, res) => {
             errorData += data.toString();
         });
 
-        pythonProcess.on('close', (code) => {
+        pythonProcess.on('close', async (code) => {
             if (code !== 0) {
                 console.error(`predict_heart.py exited with code ${code}: ${errorData}`);
                 return res.status(500).json({ success: false, message: 'Error running heart prediction model', error: errorData });
@@ -350,6 +426,18 @@ const predictHeart = async (req, res) => {
                 if (resultJson.error) {
                     return res.status(500).json({ success: false, message: 'Model Error', error: resultJson.error, trace: resultJson.trace });
                 }
+
+                if (req.user) {
+                    try {
+                        await PredictionHistory.create({
+                            user: req.user.id,
+                            type: 'Heart Disease',
+                            inputData: req.body,
+                            resultData: resultJson
+                        });
+                    } catch (err) { console.error('Error saving history', err); }
+                }
+
                 res.status(200).json({ success: true, data: resultJson });
             } catch (err) {
                 console.error('Failed to parse heart prediction output:', resultData);
@@ -371,6 +459,7 @@ module.exports = {
     getGeneralSymptoms,
     getRiskInfo,
     analyzeRisk,
+    getChatHistory,
     chatbotResponse,
     getHeartInfo,
     predictHeart

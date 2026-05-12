@@ -1,4 +1,3 @@
-
 import os
 import json
 import time
@@ -12,7 +11,6 @@ except ImportError:
     pass
 
 app = Flask(__name__)
-# import gradio as gr
 
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import Chroma
@@ -334,46 +332,7 @@ def create_demo():
 
     return demo
 
-# # Create the Gradio application
-# demo = create_demo()
 
-
-# def process_message(message, history, session_id=None):
-#     """Process a message in the context of a conversation history.
-#     Args:
-#       message (str): The user's message
-#       history (list): The current UI conversation history (from Gradio)
-#       session_id (str, optional): Unique identifier for this conversation
-
-#     Returns:
-#         response (str): The assistant's response
-#     """
-#     # Generate a session ID if not provided
-#     if session_id is None:
-#         session_id = f"session-{hash(str(time.time()))}"
-
-#     # Configure the graph to use this session ID
-#     config = {"configurable": {"thread_id": session_id}}
-
-#     try:
-#         # Invoke the graph with the new message
-#         result = graph.invoke(
-#             {"messages": [{"role": "user", "content": message}]},
-#             config=config,
-#         )
-
-#         # Extract the assistant's response
-#         for msg in reversed(result["messages"]):
-#             if msg.type == "ai":
-#                 response = msg.content
-#                 break
-
-#         # Store the updated session for future reference
-#         sessions[session_id] = result
-
-#         return response
-#     except Exception as e:
-#         return f"An error occurred: {str(e)}. Please try a different question."
 
 @app.route('/chatbot', methods=['POST'])
 def chat():

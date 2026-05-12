@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { predictDisease, predictGeneral, getGeneralSymptoms, getRiskInfo, analyzeRisk, chatbotResponse, getHeartInfo, predictHeart } = require('../controllers/mlController');
+const { predictDisease, predictGeneral, getGeneralSymptoms, getRiskInfo, analyzeRisk, chatbotResponse, getChatHistory, getHeartInfo, predictHeart } = require('../controllers/mlController');
 const { protect } = require('../middleware/authMiddleware');
 
 // ML endpoints (protected routes)
@@ -24,6 +24,7 @@ router.get('/debug-risk-info', (req, res) => {
 });
 router.get('/risk/info', protect, getRiskInfo);
 router.post('/risk', protect, analyzeRisk);
+router.get('/chatbot/history', protect, getChatHistory);
 router.post('/chatbot', protect, chatbotResponse);
 
 // TEMP TEST

@@ -19,6 +19,27 @@ const Chatbot = () => {
     scrollToBottom();
   }, [messages]);
 
+  useEffect(() => {
+    const fetchHistory = async () => {
+      try {
+        const token = localStorage.getItem('token');
+        if (!token) return;
+        const res = await axios.get('http://localhost:5000/api/chatbot/history', {
+          headers: { Authorization: `Bearer ${token}` }
+        });
+        if (res.data.data && res.data.data.length > 0) {
+          setMessages([
+            { text: "Hello! I am your AI Health Assistant. How can I help you today?", isBot: true },
+            ...res.data.data
+          ]);
+        }
+      } catch (error) {
+        console.error("Failed to load chat history:", error);
+      }
+    };
+    fetchHistory();
+  }, []);
+
   const handleSend = async (e) => {
     e.preventDefault();
     if (!input.trim()) return;

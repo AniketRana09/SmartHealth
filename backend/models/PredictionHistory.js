@@ -8,7 +8,6 @@ const predictionHistorySchema = new mongoose.Schema({
     },
     type: {
         type: String,
-        enum: ['Disease Prediction', 'Risk Analysis'],
         required: true
     },
     inputData: {
